@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WelcomeSCR component should match to snapshot: WelcomeSCR snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WelcomeSCR />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Text>
+          Welcome to the most honest news application!
+        </Text>,
+        <TouchableOpacity
+          activeOpacity={0.7}
+          onPress={[Function]}
+          style={
+            Object {
+              "borderRadius": 50,
+            }
+          }
+        >
+          <View>
+            <Text>
+              Get News
+            </Text>
+          </View>
+        </TouchableOpacity>,
+      ],
+      "style": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Welcome to the most honest news application!",
+          "style": undefined,
+        },
+        "ref": null,
+        "rendered": "Welcome to the most honest news application!",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "activeOpacity": 0.7,
+          "children": <View>
+            <Text>
+              Get News
+            </Text>
+          </View>,
+          "onPress": [Function],
+          "style": Object {
+            "borderRadius": 50,
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Text>
+              Get News
+            </Text>,
+            "style": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Get News",
+              "style": undefined,
+            },
+            "ref": null,
+            "rendered": "Get News",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Text>
+            Welcome to the most honest news application!
+          </Text>,
+          <TouchableOpacity
+            activeOpacity={0.7}
+            onPress={[Function]}
+            style={
+              Object {
+                "borderRadius": 50,
+              }
+            }
+          >
+            <View>
+              <Text>
+                Get News
+              </Text>
+            </View>
+          </TouchableOpacity>,
+        ],
+        "style": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Welcome to the most honest news application!",
+            "style": undefined,
+          },
+          "ref": null,
+          "rendered": "Welcome to the most honest news application!",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "activeOpacity": 0.7,
+            "children": <View>
+              <Text>
+                Get News
+              </Text>
+            </View>,
+            "onPress": [Function],
+            "style": Object {
+              "borderRadius": 50,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Text>
+                Get News
+              </Text>,
+              "style": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Get News",
+                "style": undefined,
+              },
+              "ref": null,
+              "rendered": "Get News",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
+`;

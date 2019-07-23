@@ -1,0 +1,1068 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailedArticleSCR component should match to snapshot: DetailedArticleSCR snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DetailedArticleSCR
+    activeArticle={
+      Object {
+        "author": "Тори Путимцева",
+        "description": "Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР",
+        "id": "2019-07-17T12:54:00Zhttps://news.google.com/__i/rss/rd/articles/CBMiZmh0dHBzOi8vem5hai51YS9wb2xpdGljcy8yNDczODctZGJyLXBvb2JpY3lhbG8tc2lsb3l1LXByaXZvbG9rdGktcG9yb3NoZW5rYS15YWtzaGNoby1wcm9kb3Z6aGl0LWJpZ2F0adIBamh0dHBzOi8vYW1wLnpuYWoudWEvcG9saXRpY3MvMjQ3Mzg3LWRici1wb29iaWN5YWxvLXNpbG95dS1wcml2b2xva3RpLXBvcm9zaGVua2EteWFrc2hjaG8tcHJvZG92emhpdC1iaWdhdGk?oc=5ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+        "publishedAt": "2019-07-17   12:54:00",
+        "title": "ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+        "url": "https://news.google.com/__i/rss/rd/articles/CBMiZmh0dHBzOi8vem5hai51YS9wb2xpdGljcy8yNDczODctZGJyLXBvb2JpY3lhbG8tc2lsb3l1LXByaXZvbG9rdGktcG9yb3NoZW5rYS15YWtzaGNoby1wcm9kb3Z6aGl0LWJpZ2F0adIBamh0dHBzOi8vYW1wLnpuYWoudWEvcG9saXRpY3MvMjQ3Mzg3LWRici1wb29iaWN5YWxvLXNpbG95dS1wcml2b2xva3RpLXBvcm9zaGVua2EteWFrc2hjaG8tcHJvZG92emhpdC1iaWdhdGk?oc=5",
+        "urlToImage": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <KeyboardAwareScrollViewMock
+          enableAutomaticScroll={true}
+          enableOnAndroid={false}
+          enableResetScrollToCoords={true}
+          extraHeight={75}
+          extraScrollHeight={0}
+          keyboardOpeningTime={250}
+          viewIsInsideTabBar={false}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+              }
+            }
+          >
+            <Text>
+               
+              ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua
+               
+            </Text>
+            <Image
+              id="article_main_image"
+              source={
+                Object {
+                  "uri": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+                }
+              }
+              style={
+                Object {
+                  "height": 250,
+                  "marginVertical": 8,
+                  "width": 250,
+                }
+              }
+            />
+            <Text>
+               
+              Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР
+               
+            </Text>
+            <View
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                }
+              }
+            >
+              <Text>
+                 
+                2019-07-17   12:54:00
+                 
+              </Text>
+              <Text>
+                Автор: 
+                Тори Путимцева
+                 
+              </Text>
+            </View>
+          </View>
+        </KeyboardAwareScrollViewMock>,
+        <View
+          style={
+            Object {
+              "paddingBottom": 7,
+            }
+          }
+        >
+          <TouchableOpacity
+            activeOpacity={0.7}
+            onPress={[Function]}
+            style={
+              Object {
+                "borderRadius": 50,
+              }
+            }
+          >
+            <View>
+              <Text>
+                Перейти на сторінку новини
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            onPress={[Function]}
+            style={
+              Object {
+                "borderRadius": 50,
+              }
+            }
+          >
+            <View>
+              <Text>
+                Повернутись до новин
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </View>,
+      ],
+      "style": Object {
+        "flex": 1,
+        "justifyContent": "space-between",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <View
+            style={
+              Object {
+                "alignItems": "center",
+              }
+            }
+          >
+            <Text>
+               
+              ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua
+               
+            </Text>
+            <Image
+              id="article_main_image"
+              source={
+                Object {
+                  "uri": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+                }
+              }
+              style={
+                Object {
+                  "height": 250,
+                  "marginVertical": 8,
+                  "width": 250,
+                }
+              }
+            />
+            <Text>
+               
+              Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР
+               
+            </Text>
+            <View
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                }
+              }
+            >
+              <Text>
+                 
+                2019-07-17   12:54:00
+                 
+              </Text>
+              <Text>
+                Автор: 
+                Тори Путимцева
+                 
+              </Text>
+            </View>
+          </View>,
+          "enableAutomaticScroll": true,
+          "enableOnAndroid": false,
+          "enableResetScrollToCoords": true,
+          "extraHeight": 75,
+          "extraScrollHeight": 0,
+          "keyboardOpeningTime": 250,
+          "viewIsInsideTabBar": false,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Text>
+                 
+                ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua
+                 
+              </Text>,
+              <Image
+                id="article_main_image"
+                source={
+                  Object {
+                    "uri": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 250,
+                    "marginVertical": 8,
+                    "width": 250,
+                  }
+                }
+              />,
+              <Text>
+                 
+                Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР
+                 
+              </Text>,
+              <View
+                style={
+                  Object {
+                    "alignSelf": "flex-end",
+                  }
+                }
+              >
+                <Text>
+                   
+                  2019-07-17   12:54:00
+                   
+                </Text>
+                <Text>
+                  Автор: 
+                  Тори Путимцева
+                   
+                </Text>
+              </View>,
+            ],
+            "style": Object {
+              "alignItems": "center",
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+                  " ",
+                ],
+                "style": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+                " ",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "id": "article_main_image",
+                "source": Object {
+                  "uri": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+                },
+                "style": Object {
+                  "height": 250,
+                  "marginVertical": 8,
+                  "width": 250,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР",
+                  " ",
+                ],
+                "style": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР",
+                " ",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Text>
+                     
+                    2019-07-17   12:54:00
+                     
+                  </Text>,
+                  <Text>
+                    Автор: 
+                    Тори Путимцева
+                     
+                  </Text>,
+                ],
+                "style": Object {
+                  "alignSelf": "flex-end",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "2019-07-17   12:54:00",
+                      " ",
+                    ],
+                    "style": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "2019-07-17   12:54:00",
+                    " ",
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      "Автор: ",
+                      "Тори Путимцева",
+                      " ",
+                    ],
+                    "style": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Автор: ",
+                    "Тори Путимцева",
+                    " ",
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <TouchableOpacity
+              activeOpacity={0.7}
+              onPress={[Function]}
+              style={
+                Object {
+                  "borderRadius": 50,
+                }
+              }
+            >
+              <View>
+                <Text>
+                  Перейти на сторінку новини
+                </Text>
+              </View>
+            </TouchableOpacity>,
+            <TouchableOpacity
+              activeOpacity={0.7}
+              onPress={[Function]}
+              style={
+                Object {
+                  "borderRadius": 50,
+                }
+              }
+            >
+              <View>
+                <Text>
+                  Повернутись до новин
+                </Text>
+              </View>
+            </TouchableOpacity>,
+          ],
+          "style": Object {
+            "paddingBottom": 7,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "activeOpacity": 0.7,
+              "children": <View>
+                <Text>
+                  Перейти на сторінку новини
+                </Text>
+              </View>,
+              "onPress": [Function],
+              "style": Object {
+                "borderRadius": 50,
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Text>
+                  Перейти на сторінку новини
+                </Text>,
+                "style": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Перейти на сторінку новини",
+                  "style": undefined,
+                },
+                "ref": null,
+                "rendered": "Перейти на сторінку новини",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "activeOpacity": 0.7,
+              "children": <View>
+                <Text>
+                  Повернутись до новин
+                </Text>
+              </View>,
+              "onPress": [Function],
+              "style": Object {
+                "borderRadius": 50,
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Text>
+                  Повернутись до новин
+                </Text>,
+                "style": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Повернутись до новин",
+                  "style": undefined,
+                },
+                "ref": null,
+                "rendered": "Повернутись до новин",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "displayName": "SafeAreaView",
+      "render": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <KeyboardAwareScrollViewMock
+            enableAutomaticScroll={true}
+            enableOnAndroid={false}
+            enableResetScrollToCoords={true}
+            extraHeight={75}
+            extraScrollHeight={0}
+            keyboardOpeningTime={250}
+            viewIsInsideTabBar={false}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                }
+              }
+            >
+              <Text>
+                 
+                ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua
+                 
+              </Text>
+              <Image
+                id="article_main_image"
+                source={
+                  Object {
+                    "uri": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 250,
+                    "marginVertical": 8,
+                    "width": 250,
+                  }
+                }
+              />
+              <Text>
+                 
+                Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР
+                 
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignSelf": "flex-end",
+                  }
+                }
+              >
+                <Text>
+                   
+                  2019-07-17   12:54:00
+                   
+                </Text>
+                <Text>
+                  Автор: 
+                  Тори Путимцева
+                   
+                </Text>
+              </View>
+            </View>
+          </KeyboardAwareScrollViewMock>,
+          <View
+            style={
+              Object {
+                "paddingBottom": 7,
+              }
+            }
+          >
+            <TouchableOpacity
+              activeOpacity={0.7}
+              onPress={[Function]}
+              style={
+                Object {
+                  "borderRadius": 50,
+                }
+              }
+            >
+              <View>
+                <Text>
+                  Перейти на сторінку новини
+                </Text>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              onPress={[Function]}
+              style={
+                Object {
+                  "borderRadius": 50,
+                }
+              }
+            >
+              <View>
+                <Text>
+                  Повернутись до новин
+                </Text>
+              </View>
+            </TouchableOpacity>
+          </View>,
+        ],
+        "style": Object {
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <View
+              style={
+                Object {
+                  "alignItems": "center",
+                }
+              }
+            >
+              <Text>
+                 
+                ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua
+                 
+              </Text>
+              <Image
+                id="article_main_image"
+                source={
+                  Object {
+                    "uri": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 250,
+                    "marginVertical": 8,
+                    "width": 250,
+                  }
+                }
+              />
+              <Text>
+                 
+                Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР
+                 
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignSelf": "flex-end",
+                  }
+                }
+              >
+                <Text>
+                   
+                  2019-07-17   12:54:00
+                   
+                </Text>
+                <Text>
+                  Автор: 
+                  Тори Путимцева
+                   
+                </Text>
+              </View>
+            </View>,
+            "enableAutomaticScroll": true,
+            "enableOnAndroid": false,
+            "enableResetScrollToCoords": true,
+            "extraHeight": 75,
+            "extraScrollHeight": 0,
+            "keyboardOpeningTime": 250,
+            "viewIsInsideTabBar": false,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Text>
+                   
+                  ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua
+                   
+                </Text>,
+                <Image
+                  id="article_main_image"
+                  source={
+                    Object {
+                      "uri": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+                    }
+                  }
+                  style={
+                    Object {
+                      "height": 250,
+                      "marginVertical": 8,
+                      "width": 250,
+                    }
+                  }
+                />,
+                <Text>
+                   
+                  Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР
+                   
+                </Text>,
+                <View
+                  style={
+                    Object {
+                      "alignSelf": "flex-end",
+                    }
+                  }
+                >
+                  <Text>
+                     
+                    2019-07-17   12:54:00
+                     
+                  </Text>
+                  <Text>
+                    Автор: 
+                    Тори Путимцева
+                     
+                  </Text>
+                </View>,
+              ],
+              "style": Object {
+                "alignItems": "center",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+                    " ",
+                  ],
+                  "style": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+                  " ",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "id": "article_main_image",
+                  "source": Object {
+                    "uri": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+                  },
+                  "style": Object {
+                    "height": 250,
+                    "marginVertical": 8,
+                    "width": 250,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР",
+                    " ",
+                  ],
+                  "style": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР",
+                  " ",
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Text>
+                       
+                      2019-07-17   12:54:00
+                       
+                    </Text>,
+                    <Text>
+                      Автор: 
+                      Тори Путимцева
+                       
+                    </Text>,
+                  ],
+                  "style": Object {
+                    "alignSelf": "flex-end",
+                  },
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        "2019-07-17   12:54:00",
+                        " ",
+                      ],
+                      "style": undefined,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      "2019-07-17   12:54:00",
+                      " ",
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        "Автор: ",
+                        "Тори Путимцева",
+                        " ",
+                      ],
+                      "style": undefined,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Автор: ",
+                      "Тори Путимцева",
+                      " ",
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <TouchableOpacity
+                activeOpacity={0.7}
+                onPress={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 50,
+                  }
+                }
+              >
+                <View>
+                  <Text>
+                    Перейти на сторінку новини
+                  </Text>
+                </View>
+              </TouchableOpacity>,
+              <TouchableOpacity
+                activeOpacity={0.7}
+                onPress={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 50,
+                  }
+                }
+              >
+                <View>
+                  <Text>
+                    Повернутись до новин
+                  </Text>
+                </View>
+              </TouchableOpacity>,
+            ],
+            "style": Object {
+              "paddingBottom": 7,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "activeOpacity": 0.7,
+                "children": <View>
+                  <Text>
+                    Перейти на сторінку новини
+                  </Text>
+                </View>,
+                "onPress": [Function],
+                "style": Object {
+                  "borderRadius": 50,
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Text>
+                    Перейти на сторінку новини
+                  </Text>,
+                  "style": undefined,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Перейти на сторінку новини",
+                    "style": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Перейти на сторінку новини",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "activeOpacity": 0.7,
+                "children": <View>
+                  <Text>
+                    Повернутись до новин
+                  </Text>
+                </View>,
+                "onPress": [Function],
+                "style": Object {
+                  "borderRadius": 50,
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Text>
+                    Повернутись до новин
+                  </Text>,
+                  "style": undefined,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Повернутись до новин",
+                    "style": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Повернутись до новин",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "SafeAreaView",
+        "render": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
+`;

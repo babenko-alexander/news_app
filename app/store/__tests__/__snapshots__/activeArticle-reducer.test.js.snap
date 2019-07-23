@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`activeArticle reducer handles RESET_ARTICLE action 1`] = `
+Object {
+  "author": "Тори Путимцева",
+  "description": "Петра Порошенка в будь-якому випадку змусять прийти на допит в ГБР",
+  "id": "2019-07-17T12:54:00Zhttps://news.google.com/__i/rss/rd/articles/CBMiZmh0dHBzOi8vem5hai51YS9wb2xpdGljcy8yNDczODctZGJyLXBvb2JpY3lhbG8tc2lsb3l1LXByaXZvbG9rdGktcG9yb3NoZW5rYS15YWtzaGNoby1wcm9kb3Z6aGl0LWJpZ2F0adIBamh0dHBzOi8vYW1wLnpuYWoudWEvcG9saXRpY3MvMjQ3Mzg3LWRici1wb29iaWN5YWxvLXNpbG95dS1wcml2b2xva3RpLXBvcm9zaGVua2EteWFrc2hjaG8tcHJvZG92emhpdC1iaWdhdGk?oc=5ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+  "publishedAt": "2019-07-17   12:54:00",
+  "title": "ДБР пообіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+  "url": "https://news.google.com/__i/rss/rd/articles/CBMiZmh0dHBzOi8vem5hai51YS9wb2xpdGljcy8yNDczODctZGJyLXBvb2JpY3lhbG8tc2lsb3l1LXByaXZvbG9rdGktcG9yb3NoZW5rYS15YWtzaGNoby1wcm9kb3Z6aGl0LWJpZ2F0adIBamh0dHBzOi8vYW1wLnpuYWoudWEvcG9saXRpY3MvMjQ3Mzg3LWRici1wb29iaWN5YWxvLXNpbG95dS1wcml2b2xva3RpLXBvcm9zaGVua2EteWFrc2hjaG8tcHJvZG92emhpdC1iaWdhdGk?oc=5",
+  "urlToImage": "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+}
+`;
+
+exports[`activeArticle reducer handles SET_ARTICLE action 1`] = `undefined`;
+
+exports[`activeArticle reducer returns the same state on an unhandled action 1`] = `Array []`;
