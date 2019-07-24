@@ -4,10 +4,9 @@ export function addAuthorsOK(data) {
     data
   };
 }
-export function addAuthorsERR(data) {
+export function addAuthorsERR() {
   return {
-    type: 'FETCH_AUTHORS_FAILURE',
-    data
+    type: 'FETCH_AUTHORS_FAILURE'
   };
 }
 

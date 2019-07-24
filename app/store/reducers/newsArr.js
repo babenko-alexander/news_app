@@ -10,10 +10,10 @@ export function unshiftFreshNews(data) {
     data
   };
 }
-export function addNewsERR(data) {
+export function addNewsERR(error) {
   return {
     type: 'FETCH_NEWS_FAILURE',
-    data
+    error
   };
 }
 
@@ -29,7 +29,9 @@ export default function newsArr(state = initialState, action) {
     }
     case 'UNSHIFT_FRESH_NEWS': {
       let newState = action.data.concat(state);
-      newState.length = 37;
+      if (newState.length > 50) {
+        newState.length = 50;
+      }
       return newState;
       // state.unshift(...action.data);
       // return state;

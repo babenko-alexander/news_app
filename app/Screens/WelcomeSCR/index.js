@@ -1,9 +1,11 @@
 import { connect } from 'react-redux';
 import WelcomeSCR from './WelcomeSCR.js';
 
-import { addNewsOK, addNewsERR } from '../../store/reducers/newsArr';
-import { addAuthorsOK, addAuthorsERR } from '../../store/reducers/authorsArr';
-import { addFreshNewsOK, addFreshNewsERR } from '../../store/reducers/freshNewsArr';
+// import { addNewsOK, addNewsERR } from '../../store/reducers/newsArr';
+// import { addAuthorsOK, addAuthorsERR } from '../../store/reducers/authorsArr';
+// import { addFreshNewsOK, addFreshNewsERR } from '../../store/reducers/freshNewsArr';
+
+import { fetchNewsRequest } from '../../store/sagas/actions';
 
 function MSTP(state) {
   return {
@@ -15,12 +17,13 @@ function MSTP(state) {
 
 function MDTP(dispatch) {
   return {
-    addNewsOK: data => dispatch(addNewsOK(data)),
-    addNewsERR: () => dispatch(addNewsERR()),
-    addAuthorsOK: data => dispatch(addAuthorsOK(data)),
-    addAuthorsERR: () => dispatch(addAuthorsERR()),
-    addFreshNewsOK: data => dispatch(addFreshNewsOK(data)),
-    addFreshNewsERR: () => dispatch(addFreshNewsERR())
+    fetchNewsRequest: () => dispatch(fetchNewsRequest())
+    // addNewsOK: data => dispatch(addNewsOK(data)),
+    // addNewsERR: () => dispatch(addNewsERR()),
+    // addAuthorsOK: data => dispatch(addAuthorsOK(data)),
+    // addAuthorsERR: () => dispatch(addAuthorsERR()),
+    // addFreshNewsOK: data => dispatch(addFreshNewsOK(data)),
+    // addFreshNewsERR: () => dispatch(addFreshNewsERR()),
   };
 }
 
