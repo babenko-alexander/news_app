@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1563968584873" clover="3.2.0">
-  <project timestamp="1563968584873" name="All files">
-    <metrics statements="87" coveredstatements="76" conditionals="38" coveredconditionals="30" methods="23" coveredmethods="13" elements="148" coveredelements="119" complexity="0" loc="87" ncloc="87" packages="6" files="12" classes="12">
+<coverage generated="1564060153519" clover="3.2.0">
+  <project timestamp="1564060153519" name="All files">
+    <metrics statements="151" coveredstatements="106" conditionals="68" coveredconditionals="32" methods="45" coveredmethods="19" elements="264" coveredelements="157" complexity="0" loc="151" ncloc="151" packages="9" files="18" classes="18">
       <package name="Components.Buttons">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="SubmitBTN.js" path="/Users/alexander/TABia/news_app/app/Components/Buttons/SubmitBTN.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="1" count="2" type="stmt"/>
-          <line num="2" count="2" type="stmt"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="6" count="5" type="stmt"/>
-          <line num="20" count="2" type="stmt"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="6" count="8" type="stmt"/>
+          <line num="20" count="3" type="stmt"/>
         </file>
         <file name="styles.js" path="/Users/alexander/TABia/news_app/app/Components/Buttons/styles.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="20" count="2" type="stmt"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="20" count="3" type="stmt"/>
         </file>
       </package>
       <package name="Components.CheckBox">
@@ -86,6 +86,36 @@
           <line num="33" count="1" type="stmt"/>
         </file>
       </package>
+      <package name="Screens.WelcomeSCR">
+        <metrics statements="21" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+        <file name="WelcomeSCR.js" path="/Users/alexander/TABia/news_app/app/Screens/WelcomeSCR/WelcomeSCR.js">
+          <metrics statements="18" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="13" count="3" type="stmt"/>
+          <line num="14" count="3" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="21" count="3" type="stmt"/>
+          <line num="22" count="3" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="89" count="3" type="stmt"/>
+          <line num="90" count="3" type="stmt"/>
+          <line num="95" count="0" type="stmt"/>
+          <line num="98" count="1" type="stmt"/>
+        </file>
+        <file name="styles.js" path="/Users/alexander/TABia/news_app/app/Screens/WelcomeSCR/styles.js">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+        </file>
+      </package>
       <package name="assets">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="checked.png" path="/Users/alexander/TABia/news_app/app/assets/checked.png">
@@ -95,6 +125,15 @@
         <file name="unchecked.png" path="/Users/alexander/TABia/news_app/app/assets/unchecked.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="config">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="settings.js" path="/Users/alexander/TABia/news_app/app/config/settings.js">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
         </file>
       </package>
       <package name="store.reducers">
@@ -141,6 +180,58 @@
           <line num="35" count="1" type="stmt"/>
           <line num="40" count="1" type="stmt"/>
           <line num="42" count="4" type="stmt"/>
+        </file>
+      </package>
+      <package name="store.sagas">
+        <metrics statements="40" coveredstatements="8" conditionals="30" coveredconditionals="2" methods="16" coveredmethods="2"/>
+        <file name="api.js" path="/Users/alexander/TABia/news_app/app/store/sagas/api.js">
+          <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+        </file>
+        <file name="fetchNews.js" path="/Users/alexander/TABia/news_app/app/store/sagas/fetchNews.js">
+          <metrics statements="16" coveredstatements="6" conditionals="17" coveredconditionals="2" methods="4" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="5" count="2" type="cond" truecount="2" falsecount="13"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="11" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+        </file>
+        <file name="functions.js" path="/Users/alexander/TABia/news_app/app/store/sagas/functions.js">
+          <metrics statements="20" coveredstatements="1" conditionals="13" coveredconditionals="0" methods="10" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="19" count="0" type="cond" truecount="0" falsecount="7"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="35" count="0" type="stmt"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="41" count="0" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="43" count="0" type="stmt"/>
+          <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="46" count="0" type="stmt"/>
         </file>
       </package>
     </metrics>

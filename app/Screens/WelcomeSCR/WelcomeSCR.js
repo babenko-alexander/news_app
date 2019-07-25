@@ -25,7 +25,6 @@ export default class WelcomeSCR extends Component {
   componentDidUpdate() {
     // console.log("STATE=", this.state);
     console.log("PROPS=", this.props);
-    // this.props.fetchNewsRequest();
   }
 
   // getNews = () => {

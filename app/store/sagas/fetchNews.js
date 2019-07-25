@@ -22,6 +22,6 @@ catch(error) {
   yield put({type: 'FETCH_NEWS_FAILURE'});
   yield put({type: 'FETCH_FRESH_NEWS_FAILURE'});
   yield put({type: 'FETCH_AUTHORS_FAILURE'});
-  yield put({type: 'THROW_ERROR_OVERLAY', error});
+  // yield put({type: 'THROW_ERROR_OVERLAY', error});
 }
 }

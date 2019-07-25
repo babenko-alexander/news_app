@@ -4,7 +4,7 @@ import SubmitBTN from './SubmitBTN';
 
 describe('SubmitBTN', () => {
         it('should match to snapshot', () => {
-            const component = shallow(<SubmitBTN text="test text"/>)
+            const component = shallow(<SubmitBTN text="test text" />)
             expect(component).toMatchSnapshot("SubmitBTN snapshot")
         });
 

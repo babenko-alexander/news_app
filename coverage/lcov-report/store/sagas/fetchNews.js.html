@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">27.45% </span>
+        <span class="strong">33.33% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>14/51</span>
+        <span class='fraction'>17/51</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">5.88% </span>
+        <span class="strong">11.76% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>1/17</span>
+        <span class='fraction'>2/17</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">50% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>2/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">31.25% </span>
+        <span class="strong">37.5% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>5/16</span>
+        <span class='fraction'>6/16</span>
       </div>
     </div>
   </div>
@@ -68,14 +68,15 @@
 23
 24
 25
-26</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+26
+27</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -92,6 +93,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { call, select, put } from 'redux-saga/effects';
 import { fetchNewsAPI } from './api';
@@ -99,8 +101,8 @@ import { makeArticlesPure, concatFreshNews, extractAuthors } from './functions';
 &nbsp;
 export default function* fetchNews() {
 try {  
-  let news = yield call(fetchNewsAPI);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-1 cbranch-no" title="branch not covered" ></span></span></span>
-  let pure<span class="cstat-no" title="statement not covered" >Articles = yield call(makeArticlesPure, news);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-2 cbranch-no" title="branch not covered" ></span></span></span></span>
+  let news = yield call(fetchNewsAPI);
+  let pureArticles = yield call(makeArticlesPure, news);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-2 cbranch-no" title="branch not covered" ></span></span></span>
   let news<span class="cstat-no" title="statement not covered" >Arr = yield select(state =&gt; <span class="fstat-no" title="function not covered" >st</span>ate.newsArr);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-3 cbranch-no" title="branch not covered" ></span></span></span></span></span>
   let fres<span class="cstat-no" title="statement not covered" >hNewsArr = yield select(stat<span class="fstat-no" title="function not covered" >e </span>=&gt; state.freshNe<span class="cstat-no" title="statement not covered" >wsArr);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-4 cbranch-no" title="branch not covered" ></span></span></span></span></span>
   if (newsArr.length === 0) {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
@@ -114,9 +116,10 @@ try {
   yield pu<span class="cstat-no" title="statement not covered" >t({ type: 'FETCH_AUTHORS_SUCCESS', data: authors });<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-10 cbranch-no" title="branch not covered" ><span class="branch-9 cbranch-no" title="branch not covered" ></span></span></span></span></span></span></span></span>
 } 
 catch(error) {
-  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_NEWS_FAILURE'})<span class="cstat-no" title="statement not covered" ><span class="branch-11 cbranch-no" title="branch not covered" ></span></span></span>
-  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_FRESH_NEWS_FAILURE'})<span class="cstat-no" title="statement not covered" ><span class="branch-12 cbranch-no" title="branch not covered" ></span></span></span>
-  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_AUTHORS_FAILURE'})<span class="cstat-no" title="statement not covered" ><span class="branch-14 cbranch-no" title="branch not covered" ><span class="branch-13 cbranch-no" title="branch not covered" ></span></span></span></span>
+  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_NEWS_FAILURE'});<span class="cstat-no" title="statement not covered" ><span class="branch-11 cbranch-no" title="branch not covered" ></span></span></span>
+  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_FRESH_NEWS_FAILURE'});<span class="cstat-no" title="statement not covered" ><span class="branch-12 cbranch-no" title="branch not covered" ></span></span></span>
+  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_AUTHORS_FAILURE'});<span class="cstat-no" title="statement not covered" ><span class="branch-14 cbranch-no" title="branch not covered" ><span class="branch-13 cbranch-no" title="branch not covered" ></span></span></span></span>
+  // yield put({type: 'THROW_ERROR_OVERLAY', error});
 }
 }</pre></td></tr>
 </table></pre>
@@ -124,7 +127,7 @@ catch(error) {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Jul 24 2019 14:40:10 GMT+0300 (Восточная Европа, летнее время)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Jul 25 2019 16:09:13 GMT+0300 (Восточная Европа, летнее время)
 </div>
 </div>
 <script src="../../prettify.js"></script>

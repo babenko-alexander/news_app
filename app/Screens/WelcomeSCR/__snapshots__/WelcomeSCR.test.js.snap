@@ -3,7 +3,21 @@
 exports[`WelcomeSCR component should match to snapshot: WelcomeSCR snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WelcomeSCR />,
+  Symbol(enzyme.__unrendered__): <WelcomeSCR
+    fetchNewsRequest={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],

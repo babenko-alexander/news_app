@@ -4,25 +4,25 @@ import {shallow} from 'enzyme';
 import WelcomeSCR from './WelcomeSCR';
 import 'isomorphic-fetch';
 
-import fetchNews from '../../store/sagas/fetchNews';
+// import fetchNews from '../../store/sagas/fetchNews';
 
-import { API_REQUEST } from '../../config/settings';
+// import { API_REQUEST } from '../../config/settings';
 
-const iterator = fetchNews();
+// const iterator = fetchNews();
 
 describe('WelcomeSCR component', () => {
   
-  // it('renders correctly', () => {
-  //   renderer.create(<WelcomeSCR />);
-  // });
-  // it('should match to snapshot', () => {
-  //   const component = shallow(<WelcomeSCR />);
-  //   expect(component).toMatchSnapshot("WelcomeSCR snapshot");
-  // });
-  // it('Initial error value should be false in state', () => {
-  //   const wrapper = shallow(<WelcomeSCR />);
-  //   expect(wrapper.instance().state.error).toBeFalsy();
-  // });
+  it('renders correctly', () => {
+    renderer.create(<WelcomeSCR fetchNewsRequest={jest.fn()} />);
+  });
+  it('should match to snapshot', () => {
+    const component = shallow(<WelcomeSCR fetchNewsRequest={jest.fn()} />);
+    expect(component).toMatchSnapshot("WelcomeSCR snapshot");
+  });
+  it('Initial error value should be false in state', () => {
+    const wrapper = shallow(<WelcomeSCR fetchNewsRequest={jest.fn()} />);
+    expect(wrapper.instance().state.error).toBeFalsy();
+  });
 
   // it('getNews have to be called', async () => {
   //   const getNewsSpy = jest.fn();

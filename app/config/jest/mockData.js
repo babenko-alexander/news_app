@@ -49,4 +49,17 @@ export const article =   {
   url: "https://news.google.com/__i/rss/rd/articles/CBMiZmh0dHBzOi8vem5hai51YS9wb2xpdGljcy8yNDczODctZGJyLXBvb2JpY3lhbG8tc2lsb3l1LXByaXZvbG9rdGktcG9yb3NoZW5rYS15YWtzaGNoby1wcm9kb3Z6aGl0LWJpZ2F0adIBamh0dHBzOi8vYW1wLnpuYWoudWEvcG9saXRpY3MvMjQ3Mzg3LWRici1wb29iaWN5YWxvLXNpbG95dS1wcml2b2xva3RpLXBvcm9zaGVua2EteWFrc2hjaG8tcHJvZG92emhpdC1iaWdhdGk?oc=5",
   urlToImage: "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg"
   };
+
+  export const notPureNews = [
+    {
+    source: {id: "google-news", name: "Google News"},
+    author: "Ториasfasf",
+    title: "ДБР пообasfsafіцяло силою приволокти Порошенка, якщо продовжить бігати - Znaj.ua",
+    description: "Петра Порошеsaffasfasfнка в будь-якому випадку змусять прийти на допит в ГБР",
+    url: "https://news.google.com/__i/rss/rd/articles/CBMiZmh0dHBzOi8vem5hai51YS9wb2xpdGljcy8yNDczODctZGJyLXBvb2JpY3lhbG8tc2lsb3l1LXByaXZvbG9rdGktcG9yb3NoZW5rYS15YWtzaGNoby1wcm9kb3Z6aGl0LWJpZ2F0adIBamh0dHBzOi8vYW1wLnpuYWoudWEvcG9saXRpY3MvMjQ3Mzg3LWRici1wb29iaWN5YWxvLXNpbG95dS1wcml2b2xva3RpLXBvcm9zaGVua2EteWFrc2hjaG8tcHJvZG92emhpdC1iaWdhdGk?oc=5",
+    urlToImage: "https://znaj.ua/images/2019/07/17/nMb3mO2ewMrQ3BD9Fd1NAkV2QdQwJk4v0jGNPZDW.jpeg",
+    publishedAt: "2019-07-11T12:54:00Z",
+    content: "2- 2019/20, . \" 24\".\r\n25 , 21:45. , . \" 24\".\r\n : ()\r\n 2019/20. 5- 2018/19 , .\r\n - . (6:1 ).\r\n : \r\n . 49- , 2018/19. ' , ( ), . , , .\r\n, , . ' , , , ' . , , .\r\n , . , , , . . , , .\r\n, \"-\" -2014 (1:0 , 0:4 ).\r\n , - 2018/19. , .\r\n : \r\n , , , .\r\n.\r\n: , ', , , , ,… [+68 chars]"
+     }
+  ]
   
