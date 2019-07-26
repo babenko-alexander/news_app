@@ -22,7 +22,7 @@ export default class ErrorModal extends Component {
       <View style={{ flex: 1 }} >
       {this.props.children}
       <TouchableWithoutFeedback onPress={this.props.turnErrorOFF}>
-        <Modal style={{ flex: 1 }} isVisible={!!this.props.error}>
+        <Modal style={{ flex: 1 }} isVisible={!!this.props.error} animationIn='fadeIn' animationOut='fadeOut' animationInTiming={1000} animationOutTiming={500}>
           <View
             style={{
               // backgroundColor: 'rgba(0, 0, 0, 0.65)',
