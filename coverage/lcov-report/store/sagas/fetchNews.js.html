@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">33.33% </span>
+        <span class="strong">95.74% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>17/51</span>
+        <span class='fraction'>45/47</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">11.76% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>2/17</span>
+        <span class='fraction'>15/15</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">50% </span>
@@ -35,13 +35,13 @@
         <span class='fraction'>2/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">37.5% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/16</span>
+        <span class='fraction'>15/15</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -69,65 +69,71 @@
 24
 25
 26
-27</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+27
+28
+29</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { call, select, put } from 'redux-saga/effects';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { call, select, put, all } from 'redux-saga/effects';
 import { fetchNewsAPI } from './api';
 import { makeArticlesPure, concatFreshNews, extractAuthors } from './functions';
 &nbsp;
 export default function* fetchNews() {
 try {  
   let news = yield call(fetchNewsAPI);
-  let pureArticles = yield call(makeArticlesPure, news);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-2 cbranch-no" title="branch not covered" ></span></span></span>
-  let news<span class="cstat-no" title="statement not covered" >Arr = yield select(state =&gt; <span class="fstat-no" title="function not covered" >st</span>ate.newsArr);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-3 cbranch-no" title="branch not covered" ></span></span></span></span></span>
-  let fres<span class="cstat-no" title="statement not covered" >hNewsArr = yield select(stat<span class="fstat-no" title="function not covered" >e </span>=&gt; state.freshNe<span class="cstat-no" title="statement not covered" >wsArr);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-4 cbranch-no" title="branch not covered" ></span></span></span></span></span>
-  if (newsArr.length === 0) {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
-    yield <span class="cstat-no" title="statement not covered" >put({ type: 'FETCH_FRESH_NEWS_SUCCESS', data: pureArticles });<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-6 cbranch-no" title="branch not covered" ><span class="branch-5 cbranch-no" title="branch not covered" ></span></span></span></span></span></span>
+  let pureArticles = yield call(makeArticlesPure, news);
+  let freshNewsArr = yield select(stat<span class="fstat-no" title="function not covered" >e </span>=&gt; state.freshNe<span class="cstat-no" title="statement not covered" >wsArr);</span>
+  let newsArr = yield select(state =&gt; <span class="fstat-no" title="function not covered" >st</span>ate.newsArr);<span class="cstat-no" title="statement not covered" ></span>
+  if (newsArr.length === 0) {
+    yield put({ type: 'FETCH_FRESH_NEWS_SUCCESS', data: pureArticles });
   } else {
-    yield <span class="cstat-no" title="statement not covered" >call(concatFreshNews, pureArticles, newsArr, freshNewsArr);<span class="cstat-no" title="statement not covered" ><span class="branch-7 cbranch-no" title="branch not covered" ></span></span></span>
+    yield call(concatFreshNews, pureArticles, newsArr, freshNewsArr);
   }
   // newsArr = yield select(state =&gt; state.newsArr);
   // freshNewsArr = yield select(state =&gt; state.freshNewsArr);
-  let auth<span class="cstat-no" title="statement not covered" >ors = yield call(extractAuthors, newsArr, freshNewsArr);<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-8 cbranch-no" title="branch not covered" ></span></span></span></span>
-  yield pu<span class="cstat-no" title="statement not covered" >t({ type: 'FETCH_AUTHORS_SUCCESS', data: authors });<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="branch-10 cbranch-no" title="branch not covered" ><span class="branch-9 cbranch-no" title="branch not covered" ></span></span></span></span></span></span></span></span>
-} 
-catch(error) {
-  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_NEWS_FAILURE'});<span class="cstat-no" title="statement not covered" ><span class="branch-11 cbranch-no" title="branch not covered" ></span></span></span>
-  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_FRESH_NEWS_FAILURE'});<span class="cstat-no" title="statement not covered" ><span class="branch-12 cbranch-no" title="branch not covered" ></span></span></span>
-  yield pu<span class="cstat-no" title="statement not covered" >t({type: 'FETCH_AUTHORS_FAILURE'});<span class="cstat-no" title="statement not covered" ><span class="branch-14 cbranch-no" title="branch not covered" ><span class="branch-13 cbranch-no" title="branch not covered" ></span></span></span></span>
-  // yield put({type: 'THROW_ERROR_OVERLAY', error});
-}
+  let authors = yield call(extractAuthors, newsArr, freshNewsArr);
+  yield put({ type: 'FETCH_AUTHORS_SUCCESS', data: authors });
+  } 
+  catch(error) {
+    yield all([
+      put({type: 'FETCH_NEWS_FAILURE'}),
+      put({type: 'FETCH_FRESH_NEWS_FAILURE'}),
+      put({type: 'FETCH_AUTHORS_FAILURE'}),
+      put({type: 'ERROR_ON', error})
+    ])
+  }
 }</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Jul 25 2019 16:09:13 GMT+0300 (Восточная Европа, летнее время)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Jul 26 2019 17:33:25 GMT+0300 (Восточная Европа, летнее время)
 </div>
 </div>
 <script src="../../prettify.js"></script>

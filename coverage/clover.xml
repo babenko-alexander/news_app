@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1564060153519" clover="3.2.0">
-  <project timestamp="1564060153519" name="All files">
-    <metrics statements="151" coveredstatements="106" conditionals="68" coveredconditionals="32" methods="45" coveredmethods="19" elements="264" coveredelements="157" complexity="0" loc="151" ncloc="151" packages="9" files="18" classes="18">
+<coverage generated="1564151605683" clover="3.2.0">
+  <project timestamp="1564151605683" name="All files">
+    <metrics statements="150" coveredstatements="115" conditionals="66" coveredconditionals="45" methods="45" coveredmethods="19" elements="261" coveredelements="179" complexity="0" loc="150" ncloc="150" packages="9" files="18" classes="18">
       <package name="Components.Buttons">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="SubmitBTN.js" path="/Users/alexander/TABia/news_app/app/Components/Buttons/SubmitBTN.js">
@@ -183,7 +183,7 @@
         </file>
       </package>
       <package name="store.sagas">
-        <metrics statements="40" coveredstatements="8" conditionals="30" coveredconditionals="2" methods="16" coveredmethods="2"/>
+        <metrics statements="39" coveredstatements="17" conditionals="28" coveredconditionals="15" methods="16" coveredmethods="2"/>
         <file name="api.js" path="/Users/alexander/TABia/news_app/app/store/sagas/api.js">
           <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
@@ -192,23 +192,22 @@
           <line num="8" count="0" type="stmt"/>
         </file>
         <file name="fetchNews.js" path="/Users/alexander/TABia/news_app/app/store/sagas/fetchNews.js">
-          <metrics statements="16" coveredstatements="6" conditionals="17" coveredconditionals="2" methods="4" coveredmethods="2"/>
+          <metrics statements="15" coveredstatements="15" conditionals="15" coveredconditionals="15" methods="4" coveredmethods="2"/>
           <line num="1" count="1" type="stmt"/>
           <line num="2" count="1" type="stmt"/>
           <line num="3" count="1" type="stmt"/>
-          <line num="5" count="2" type="cond" truecount="2" falsecount="13"/>
-          <line num="7" count="1" type="stmt"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-          <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="23" count="0" type="stmt"/>
-          <line num="24" count="0" type="stmt"/>
+          <line num="5" count="18" type="cond" truecount="13" falsecount="0"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="26" count="2" type="stmt"/>
         </file>
         <file name="functions.js" path="/Users/alexander/TABia/news_app/app/store/sagas/functions.js">
           <metrics statements="20" coveredstatements="1" conditionals="13" coveredconditionals="0" methods="10" coveredmethods="0"/>

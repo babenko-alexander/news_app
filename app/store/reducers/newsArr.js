@@ -29,8 +29,8 @@ export default function newsArr(state = initialState, action) {
     }
     case 'UNSHIFT_FRESH_NEWS': {
       let newState = action.data.concat(state);
-      if (newState.length > 50) {
-        newState.length = 50;
+      if (newState.length > 100) {
+        newState.length = 100;
       }
       return newState;
       // state.unshift(...action.data);

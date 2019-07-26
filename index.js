@@ -6,6 +6,8 @@ import { Provider } from 'react-redux';
 import configureStore from './app/store';
 
 import App from './app/helpers/App';
+// import Indicator from './app/Components/Indicator';
+import ErrorModal from './app/Components/ErrorModal';
 
 import { name as appName } from './app.json';
 
@@ -16,7 +18,11 @@ const PRedux = () => {
   return (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-        <App />
+        {/* <Indicator> */}
+        <ErrorModal>
+           <App />
+        </ErrorModal>
+        {/* </Indicator> */}
     </PersistGate>
   </Provider>
 )};
