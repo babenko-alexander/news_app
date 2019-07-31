@@ -3,7 +3,7 @@ import Indicator from './Indicator';
 
 function mapStateToProps(state) {
   return {
-    indicator: state.indicator
+    loading: state.loading
   };
 }
 

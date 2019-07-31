@@ -5,13 +5,15 @@ import { setArticle } from '../../store/reducers/activeArticle';
 import { unshiftFreshNews } from '../../store/reducers/newsArr';
 import { resetFreshNews, updateFreshNews } from '../../store/reducers/freshNewsArr';
 
-function MSTP(state) {
+function MSTP(state, ownProps) {
   return {
     newsArr: state.newsArr,
     freshNewsArr: state.freshNewsArr,
     authorsArr: state.authorsArr
   };
 }
+
+// const MDTP = { setArticle, unshiftFreshNews, resetFreshNews, updateFreshNews };
 
 function MDTP(dispatch) {
   return {

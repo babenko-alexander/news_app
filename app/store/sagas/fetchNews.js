@@ -1,11 +1,11 @@
 import { call, select, put, all } from 'redux-saga/effects';
 import { fetchNewsAPI } from './api';
-import { makeArticlesPure, concatFreshNews, extractAuthors } from './functions';
+import { articlesMapper, concatFreshNews, extractAuthors } from './functions';
 
 export default function* fetchNews() {
 try {  
   let news = yield call(fetchNewsAPI);
-  let pureArticles = yield call(makeArticlesPure, news);
+  let pureArticles = yield call(articlesMapper, news);
   let freshNewsArr = yield select(state => state.freshNewsArr);
   let newsArr = yield select(state => state.newsArr);
   if (newsArr.length === 0) {

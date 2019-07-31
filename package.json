@@ -25,7 +25,8 @@
     "redux": "^4.0.4",
     "redux-persist": "^5.10.0",
     "redux-saga": "^1.0.5",
-    "save-dev": "^2.0.0"
+    "save-dev": "^2.0.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",

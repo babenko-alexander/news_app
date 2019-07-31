@@ -1,6 +1,6 @@
 import { call, put } from 'redux-saga/effects';
 
-export function makeArticlesPure(news) {
+export function articlesMapper(news) {
   let pureArticles = news.articles.map((item, index) => {
     let articleID =  item.publishedAt + item.url + item.title;
     return {

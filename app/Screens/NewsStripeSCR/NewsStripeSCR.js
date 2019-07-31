@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { View, Text, SafeAreaView, TouchableOpacity, Image, TextInput } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
@@ -8,7 +8,7 @@ import NewsItem from '../../Components/NewsItem/NewsItem';
 import SubmitBTN from '../../Components/Buttons/SubmitBTN';
 import CheckBox from '../../Components/CheckBox/CheckBox';
 
-export default class NewsStripeSCR extends PureComponent {
+export default class NewsStripeSCR extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,6 +33,34 @@ export default class NewsStripeSCR extends PureComponent {
 
   componentDidUpdate() {
     // console.log("NewsStripeSTATE=", this.state);
+  }
+
+  handleScroll = (e) => {
+    console.log('SCROLL=', e.nativeEvent.contentOffset.y);
+    if (e.nativeEvent.contentOffset.y <= 0) {
+    this.props.unshiftFreshNews(this.props.freshNewsArr);
+    this.props.resetFreshNews();
+    } else if (e.nativeEvent.contentOffset.y > this.props.freshNewsArr.length * 150 ) {
+      return;
+    } else {
+      let scrollPosition = e.nativeEvent.contentOffset.y;
+      let length = this.props.freshNewsArr.length;
+      let coeficient = 150;
+      let counOfUnshiftingNews = null;
+      let countOfNewsToLeave = null;
+      let unshiftingNews = [];
+      let newsToLeave = [];
+      counOfUnshiftingNews = Math.floor((length - scrollPosition / coeficient) );
+      countOfNewsToLeave = length - counOfUnshiftingNews;
+      console.log('counOfUnshiftingNews=', counOfUnshiftingNews);
+      unshiftingNews = this.props.freshNewsArr.slice(countOfNewsToLeave);
+      newsToLeave =  this.props.freshNewsArr.slice(0, countOfNewsToLeave);
+      console.log('unshiftingNews=', unshiftingNews);
+      console.log('newsToLeave=', newsToLeave);
+      setTimeout(() => this.newsUpdate(unshiftingNews, newsToLeave), 1000);
+      // this.props.unshiftFreshNews(unshiftingNews);
+      // this.props.updateFreshNews(newsToLeave);
+    }
   }
 
   activateArticle = (id) => {
@@ -134,33 +162,10 @@ export default class NewsStripeSCR extends PureComponent {
         {this.state.isFilters ? FilterSection() : null}
         <KeyboardAwareScrollView 
         style={styles.container} 
-        onScrollEndDrag={(e) => {
-          console.log('SCROLL=', e.nativeEvent.contentOffset.y);
-          if (e.nativeEvent.contentOffset.y <= 0) {
-          this.props.unshiftFreshNews(this.props.freshNewsArr);
-          this.props.resetFreshNews();
-          } else if (e.nativeEvent.contentOffset.y > this.props.freshNewsArr.length * 150 ) {
-            return;
-          } else {
-            let scrollPosition = e.nativeEvent.contentOffset.y;
-            let length = this.props.freshNewsArr.length;
-            let coeficient = 150;
-            let counOfUnshiftingNews = null;
-            let countOfNewsToLeave = null;
-            let unshiftingNews = [];
-            let newsToLeave = [];
-            counOfUnshiftingNews = Math.floor((length - scrollPosition / coeficient) );
-            countOfNewsToLeave = length - counOfUnshiftingNews;
-            console.log('counOfUnshiftingNews=', counOfUnshiftingNews);
-            unshiftingNews = this.props.freshNewsArr.slice(countOfNewsToLeave);
-            newsToLeave =  this.props.freshNewsArr.slice(0, countOfNewsToLeave);
-            console.log('unshiftingNews=', unshiftingNews);
-            console.log('newsToLeave=', newsToLeave);
-            setTimeout(() => this.newsUpdate(unshiftingNews, newsToLeave), 1000);
-            // this.props.unshiftFreshNews(unshiftingNews);
-            // this.props.updateFreshNews(newsToLeave);
-          }
-        }}
+        // enableOnAndroid
+        innerRef={(node) => { scroll = node; }}
+        onScrollEndDrag={this.handleScroll}
+        // onScrollEndDrag={() => scroll.props.scrollToPosition(0, 400)}
         >
           <View>
             {this.state.isFilterActive 

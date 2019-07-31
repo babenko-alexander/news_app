@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { View, Text } from "react-native";
 
 import styles from "./styles";
 
-import { API_REQUEST } from "../../config/settings";
+// import { API_REQUEST } from "../../config/settings";
 
 import SubmitBTN from "../../Components/Buttons/SubmitBTN";
 
-export default class WelcomeSCR extends Component {
+export default class WelcomeSCR extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,7 +19,7 @@ export default class WelcomeSCR extends Component {
     // this.getNews();
     // setInterval(this.getNews, 10000);
     this.props.fetchNewsRequest();
-    setInterval(this.props.fetchNewsRequest, 10000);
+    setInterval(this.props.fetchNewsRequest, 30000);
   }
 
   componentDidUpdate() {

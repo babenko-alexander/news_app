@@ -12,7 +12,7 @@ export default class Indicator extends Component {
     return (
       <View style={{ flex: 1 }}>
         {this.props.children}
-        <Modal style={{ flex: 1 }} isVisible={this.props.indicator}>
+        <Modal style={{ flex: 1 }} isVisible={this.props.loading}>
           <View style={{ flex: 1 }}>
             <View style={{ flex: 1 }} />
             <ActivityIndicator size="large" color="#F00" />

@@ -6,6 +6,7 @@ import filterValues from './filterValues';
 import activeArticle from './activeArticle';
 import authorsArr from './authorsArr';
 import error from './error';
+import loading from './loading';
 
 export default combineReducers({
   newsArr,
@@ -13,5 +14,6 @@ export default combineReducers({
   authorsArr,
   filterValues,
   activeArticle,
-  error
+  error,
+  loading
 });
