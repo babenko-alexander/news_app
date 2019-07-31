@@ -1,5 +1,6 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
+import { composeWithDevTools } from 'remote-redux-devtools';
 
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import { persistStore, persistReducer } from 'redux-persist';
@@ -19,7 +20,11 @@ const persistedReducer = persistReducer(persistConfig, reducers);
 
 const sagaMiddleware = createSagaMiddleware();
 
-const store = createStore(persistedReducer, applyMiddleware(sagaMiddleware));
+const composeEnhancers = composeWithDevTools({ realtime: true });
+
+const store = createStore(persistedReducer, compose(
+  applyMiddleware(sagaMiddleware)
+  ));
 const persistor = persistStore(store);
 
 export default function configureStore() {
